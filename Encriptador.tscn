@@ -142,3 +142,14 @@ text = "Texto a encriptar"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="AcceptDialog" type="AcceptDialog" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -147.5
+margin_top = -44.0
+margin_right = 147.5
+margin_bottom = 44.0
+window_title = "Error"
