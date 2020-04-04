@@ -1,0 +1,69 @@
+[gd_scene format=2]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ColorRect3" type="ColorRect" parent="ParallaxBackground"]
+anchor_left = -1.061
+anchor_top = 0.012
+anchor_right = -0.044
+anchor_bottom = 1.047
+margin_left = 1347.12
+margin_top = -16.8223
+margin_right = 1347.36
+margin_bottom = -17.0223
+color = Color( 0.203922, 0.203922, 0.219608, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect2" type="ColorRect" parent="ParallaxBackground"]
+margin_left = -11.7914
+margin_top = -7.35385
+margin_right = 1289.21
+margin_bottom = 45.6461
+color = Color( 0.14902, 0.14902, 0.172549, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="¿Qué deseas hacer\?" type="Label" parent="."]
+anchor_left = -1.046
+anchor_right = -0.05
+anchor_bottom = 1.0
+margin_left = 1749.75
+margin_top = 250.818
+margin_right = 893.866
+margin_bottom = -438.182
+text = "¿Qué deseas hacer?
+"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Encriptar" type="Button" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 494.343
+margin_top = 369.722
+margin_right = -525.651
+margin_bottom = -311.278
+text = "Encriptar"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Desencriptar" type="Button" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 492.757
+margin_top = 445.413
+margin_right = -527.241
+margin_bottom = -235.587
+text = "Desencriptar"
+__meta__ = {
+"_edit_use_anchors_": false
+}
