@@ -15,7 +15,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Primer Proyecto"
+config/name="Maquina Enigma"
 config/icon="res://icon.png"
 
 [rendering]
