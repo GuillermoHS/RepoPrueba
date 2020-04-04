@@ -1,9 +1,20 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=7 format=2]
 
-[sub_resource type="StyleBoxFlat" id=1]
+[ext_resource path="res://Fuentes/static/RobotoSlab-Bold.ttf" type="DynamicFontData" id=1]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=4]
 bg_color = Color( 0.137255, 0.137255, 0.137255, 1 )
 
-[sub_resource type="StyleBoxFlat" id=2]
+[sub_resource type="StyleBoxFlat" id=5]
 bg_color = Color( 0.137255, 0.137255, 0.137255, 1 )
 
 [node name="CanvasLayer" type="CanvasLayer"]
@@ -16,6 +27,7 @@ margin_left = 26.4295
 margin_top = 16.911
 margin_right = -1080.57
 margin_bottom = -678.089
+custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 text = "ENCRIPTADOR"
 align = 1
@@ -31,6 +43,7 @@ margin_left = 783.789
 margin_top = 599.166
 margin_right = -140.211
 margin_bottom = -45.8345
+custom_fonts/font = SubResource( 2 )
 text = "Encriptar"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -43,6 +56,7 @@ margin_left = 66.4822
 margin_top = 635.29
 margin_right = -989.518
 margin_bottom = -51.7096
+custom_fonts/font = SubResource( 3 )
 text = "Generar clave privada"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -55,7 +69,7 @@ margin_left = 64.7411
 margin_top = 63.1275
 margin_right = -68.2589
 margin_bottom = -435.872
-custom_styles/normal = SubResource( 1 )
+custom_styles/normal = SubResource( 4 )
 scroll_following = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -68,7 +82,7 @@ margin_left = 65.4892
 margin_top = 327.903
 margin_right = -67.5107
 margin_bottom = -171.097
-custom_styles/normal = SubResource( 1 )
+custom_styles/normal = SubResource( 4 )
 scroll_following = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -81,7 +95,7 @@ margin_left = 317.482
 margin_top = 628.29
 margin_right = -683.518
 margin_bottom = -46.7096
-custom_styles/normal = SubResource( 2 )
+custom_styles/normal = SubResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
