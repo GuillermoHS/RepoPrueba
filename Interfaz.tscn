@@ -1,0 +1,64 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="Theme" id=1]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="Titulo" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -641.0
+margin_right = 641.0
+margin_bottom = 20.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "PROYECTO ENIGMA"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Boton Encriptar" type="Button" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1000.61
+margin_top = -70.9689
+margin_right = -19.3854
+margin_bottom = -31.9689
+text = "Encriptar"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Boton desencriptar" type="Button" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 725.819
+margin_top = -70.9689
+margin_right = -294.181
+margin_bottom = -31.9689
+text = "Desencriptar"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 25.5585
+margin_top = 123.559
+margin_right = 1252.56
+margin_bottom = 577.559
+theme = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextEdit" type="TextEdit" parent="."]
+margin_left = 21.5399
+margin_top = 628.076
+margin_right = 713.54
+margin_bottom = 705.076
+__meta__ = {
+"_edit_use_anchors_": false
+}
