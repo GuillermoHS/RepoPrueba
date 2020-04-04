@@ -12,14 +12,14 @@ bg_color = Color( 0.137255, 0.137255, 0.137255, 1 )
 light_mask = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_top = 22.0
-margin_right = 0.279907
-margin_bottom = -678.947
+margin_left = 26.4295
+margin_top = 16.911
+margin_right = -1080.57
+margin_bottom = -678.089
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 text = "ENCRIPTADOR"
 align = 1
 valign = 1
-percent_visible = -0.0909091
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -27,10 +27,10 @@ __meta__ = {
 [node name="Boton Encriptar" type="Button" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 1000.61
-margin_top = 649.031
-margin_right = -19.3854
-margin_bottom = -31.9689
+margin_left = 783.789
+margin_top = 599.166
+margin_right = -140.211
+margin_bottom = -45.8345
 text = "Encriptar"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -39,22 +39,35 @@ __meta__ = {
 [node name="Boton desencriptar" type="Button" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 725.819
-margin_top = 649.031
-margin_right = -294.181
-margin_bottom = -31.9689
-text = "Desencriptar"
+margin_left = 66.4822
+margin_top = 635.29
+margin_right = -989.518
+margin_bottom = -51.7096
+text = "Generar clave privada"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
+[node name="RichTextLabel1" type="RichTextLabel" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 32.3958
-margin_top = 67.4598
-margin_right = -20.6041
-margin_bottom = -148.54
+margin_left = 64.7411
+margin_top = 63.1275
+margin_right = -68.2589
+margin_bottom = -435.872
+custom_styles/normal = SubResource( 1 )
+scroll_following = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 65.4892
+margin_top = 327.903
+margin_right = -67.5107
+margin_bottom = -171.097
 custom_styles/normal = SubResource( 1 )
 scroll_following = true
 __meta__ = {
@@ -64,10 +77,10 @@ __meta__ = {
 [node name="TextEdit" type="TextEdit" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 21.5399
-margin_top = 628.076
-margin_right = -566.46
-margin_bottom = -14.924
+margin_left = 317.482
+margin_top = 628.29
+margin_right = -683.518
+margin_bottom = -46.7096
 custom_styles/normal = SubResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -76,10 +89,10 @@ __meta__ = {
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="ColorRect" type="ColorRect" parent="ParallaxBackground"]
-margin_left = -14.1694
-margin_top = -7.0
-margin_right = 1287.83
-margin_bottom = 738.0
+margin_left = -9.31067
+margin_top = -8.3981
+margin_right = 1292.69
+margin_bottom = 736.602
 color = Color( 0.203922, 0.203922, 0.219608, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
