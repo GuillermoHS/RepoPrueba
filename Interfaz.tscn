@@ -9,15 +9,17 @@ bg_color = Color( 0.137255, 0.137255, 0.137255, 1 )
 [node name="CanvasLayer" type="CanvasLayer"]
 
 [node name="Titulo" type="Label" parent="."]
-anchor_right = 0.999
+light_mask = 0
+anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 1.0
+margin_top = 22.0
 margin_right = 0.279907
-margin_bottom = -700.0
+margin_bottom = -678.947
 custom_colors/font_color = Color( 1, 1, 1, 1 )
-text = "PROYECTO ENIGMA"
+text = "ENCRIPTADOR"
 align = 1
 valign = 1
+percent_visible = -0.0909091
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -49,10 +51,10 @@ __meta__ = {
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 24.6396
-margin_top = 73.0
-margin_right = -28.3604
-margin_bottom = -143.0
+margin_left = 32.3958
+margin_top = 67.4598
+margin_right = -20.6041
+margin_bottom = -148.54
 custom_styles/normal = SubResource( 1 )
 scroll_following = true
 __meta__ = {
@@ -67,6 +69,18 @@ margin_top = 628.076
 margin_right = -566.46
 margin_bottom = -14.924
 custom_styles/normal = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="ParallaxBackground"]
+margin_left = -14.1694
+margin_top = -7.0
+margin_right = 1287.83
+margin_bottom = 738.0
+color = Color( 0.203922, 0.203922, 0.219608, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
