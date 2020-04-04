@@ -5,3 +5,14 @@ const DICCIONARIO = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","ñ
 func _ready():
 	pass
 
+
+
+func _on_Boton_Encriptar_pressed():
+	if $TextEdit.text == "":
+		$AcceptDialog.show()
+		pass
+	var clave = $TextEdit
+	var claveArray = []
+	for c in clave:
+		claveArray.append(c)
+	

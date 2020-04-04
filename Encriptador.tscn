@@ -155,3 +155,4 @@ margin_top = -44.0
 margin_right = 147.5
 margin_bottom = 44.0
 window_title = "Error"
+[connection signal="pressed" from="Boton Encriptar" to="." method="_on_Boton_Encriptar_pressed"]
