@@ -155,6 +155,7 @@ margin_top = -44.0
 margin_right = 147.5
 margin_bottom = 44.0
 window_title = "Error"
+<<<<<<< HEAD
 
 [node name="Boton Encriptar" type="Button" parent="."]
 anchor_right = 1.0
@@ -183,3 +184,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 [connection signal="pressed" from="Volver" to="." method="_on_Volver_pressed"]
+=======
+[connection signal="pressed" from="Boton Encriptar" to="." method="_on_Boton_Encriptar_pressed"]
+>>>>>>> efa2f880d3e836e22fb22c013fefb0b92e83ad6e

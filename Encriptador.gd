@@ -4,6 +4,21 @@ const DICCIONARIO = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","ñ
 
 func _ready():
 	pass
+<<<<<<< HEAD
 # Funcion para volver a la escena de inicio
 func _on_Volver_pressed():
 	get_tree().change_scene("res://Inicio.tscn")
+=======
+
+
+
+func _on_Boton_Encriptar_pressed():
+	if $TextEdit.text == "":
+		$AcceptDialog.show()
+		pass
+	var clave = $TextEdit
+	var claveArray = []
+	for c in clave:
+		claveArray.append(c)
+	
+>>>>>>> efa2f880d3e836e22fb22c013fefb0b92e83ad6e
