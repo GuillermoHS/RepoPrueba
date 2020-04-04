@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Fuentes/static/RobotoSlab-Bold.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Encriptador.gd" type="Script" id=2]
@@ -7,32 +7,19 @@
 size = 23
 font_data = ExtResource( 1 )
 
-[sub_resource type="StyleBoxFlat" id=2]
-bg_color = Color( 0.137255, 0.137255, 0.137255, 1 )
+[sub_resource type="DynamicFont" id=2]
+size = 33
+font_data = ExtResource( 1 )
 
 [sub_resource type="StyleBoxFlat" id=3]
 bg_color = Color( 0.137255, 0.137255, 0.137255, 1 )
 
-[sub_resource type="DynamicFont" id=4]
-size = 19
-font_data = ExtResource( 1 )
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.137255, 0.137255, 0.137255, 1 )
 
 [sub_resource type="DynamicFont" id=5]
-size = 33
+size = 19
 font_data = ExtResource( 1 )
-
-[sub_resource type="GDScript" id=6]
-resource_name = "Volver"
-script/source = "extends Button
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-# Funcion para volver a la escena de inicio
-func _on_Volver_pressed():
-	get_tree().change_scene(\"res://Inicio.tscn\")
-"
 
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource( 2 )
@@ -71,6 +58,19 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Boton Encriptar" type="Button" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 842.993
+margin_top = 621.46
+margin_right = -129.007
+margin_bottom = -25.5397
+custom_fonts/font = SubResource( 2 )
+text = "Encriptar"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="TextEdit 1" type="TextEdit" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -79,7 +79,7 @@ margin_top = 88.4518
 margin_right = -68.2589
 margin_bottom = -410.548
 rect_pivot_offset = Vector2( 234, 256.231 )
-custom_styles/normal = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -91,7 +91,7 @@ margin_left = 65.4892
 margin_top = 353.227
 margin_right = -67.5109
 margin_bottom = -145.773
-custom_styles/normal = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
 scroll_following = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -104,7 +104,7 @@ margin_left = 145.212
 margin_top = 648.94
 margin_right = -855.788
 margin_bottom = -26.0591
-custom_styles/normal = SubResource( 3 )
+custom_styles/normal = SubResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -112,10 +112,10 @@ __meta__ = {
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="ColorRect" type="ColorRect" parent="ParallaxBackground"]
-margin_left = -14.4417
-margin_top = -17.1088
-margin_right = 1307.56
-margin_bottom = 755.891
+margin_left = -16.4417
+margin_top = -19.1088
+margin_right = 1305.56
+margin_bottom = 753.891
 color = Color( 0.203922, 0.203922, 0.219608, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -127,7 +127,7 @@ margin_top = 322.0
 margin_right = 245.0
 margin_bottom = 348.0
 rect_pivot_offset = Vector2( 627.395, 670.634 )
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 5 )
 text = "Texto encriptado "
 __meta__ = {
 "_edit_use_anchors_": false
@@ -139,7 +139,7 @@ margin_top = 55.684
 margin_right = 241.842
 margin_bottom = 81.684
 rect_pivot_offset = Vector2( 627.395, 670.634 )
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 5 )
 text = "Texto a encriptar"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -155,35 +155,4 @@ margin_top = -44.0
 margin_right = 147.5
 margin_bottom = 44.0
 window_title = "Error"
-<<<<<<< HEAD
-
-[node name="Boton Encriptar" type="Button" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 902.993
-margin_top = 628.46
-margin_right = -69.007
-margin_bottom = -18.5397
-custom_fonts/font = SubResource( 5 )
-text = "Encriptar"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Volver" type="Button" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 565.993
-margin_top = 628.46
-margin_right = -406.007
-margin_bottom = -18.5397
-custom_fonts/font = SubResource( 5 )
-text = "Volver"
-script = SubResource( 6 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-[connection signal="pressed" from="Volver" to="." method="_on_Volver_pressed"]
-=======
 [connection signal="pressed" from="Boton Encriptar" to="." method="_on_Boton_Encriptar_pressed"]
->>>>>>> efa2f880d3e836e22fb22c013fefb0b92e83ad6e
