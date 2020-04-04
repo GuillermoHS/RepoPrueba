@@ -1,26 +1,28 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Fuentes/static/RobotoSlab-Bold.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Desencriptador.gd" type="Script" id=2]
 
 [sub_resource type="DynamicFont" id=1]
 size = 23
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=2]
-size = 33
-font_data = ExtResource( 1 )
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.137255, 0.137255, 0.137255, 1 )
 
 [sub_resource type="StyleBoxFlat" id=3]
 bg_color = Color( 0.137255, 0.137255, 0.137255, 1 )
 
-[sub_resource type="StyleBoxFlat" id=4]
-bg_color = Color( 0.137255, 0.137255, 0.137255, 1 )
-
-[sub_resource type="DynamicFont" id=5]
+[sub_resource type="DynamicFont" id=4]
 size = 19
 font_data = ExtResource( 1 )
 
+[sub_resource type="DynamicFont" id=5]
+size = 33
+font_data = ExtResource( 1 )
+
 [node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource( 2 )
 
 [node name="Titulo" type="Label" parent="."]
 light_mask = 0
@@ -56,19 +58,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Boton Encriptar" type="Button" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 842.993
-margin_top = 621.46
-margin_right = -129.007
-margin_bottom = -25.5397
-custom_fonts/font = SubResource( 2 )
-text = "Encriptar"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="TextEdit 1" type="TextEdit" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -77,7 +66,7 @@ margin_top = 88.4518
 margin_right = -68.2589
 margin_bottom = -410.548
 rect_pivot_offset = Vector2( 234, 256.231 )
-custom_styles/normal = SubResource( 3 )
+custom_styles/normal = SubResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -89,7 +78,7 @@ margin_left = 65.4892
 margin_top = 353.227
 margin_right = -67.5109
 margin_bottom = -145.773
-custom_styles/normal = SubResource( 3 )
+custom_styles/normal = SubResource( 2 )
 scroll_following = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -102,7 +91,7 @@ margin_left = 145.212
 margin_top = 648.94
 margin_right = -855.788
 margin_bottom = -26.0591
-custom_styles/normal = SubResource( 4 )
+custom_styles/normal = SubResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -111,9 +100,9 @@ __meta__ = {
 
 [node name="ColorRect" type="ColorRect" parent="ParallaxBackground"]
 margin_left = -16.4417
-margin_top = -19.1088
+margin_top = -17.6946
 margin_right = 1305.56
-margin_bottom = 753.891
+margin_bottom = 755.305
 color = Color( 0.203922, 0.203922, 0.219608, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -125,7 +114,7 @@ margin_top = 322.0
 margin_right = 245.0
 margin_bottom = 348.0
 rect_pivot_offset = Vector2( 627.395, 670.634 )
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 4 )
 text = "Texto desencriptado"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -137,7 +126,7 @@ margin_top = 55.684
 margin_right = 241.842
 margin_bottom = 81.684
 rect_pivot_offset = Vector2( 627.395, 670.634 )
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 4 )
 text = "Texto a desencriptar"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -153,3 +142,30 @@ margin_top = -49.5
 margin_right = 146.5
 margin_bottom = 49.5
 window_title = "Error"
+
+[node name="Boton Encriptar" type="Button" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 903.286
+margin_top = 628.46
+margin_right = -68.7141
+margin_bottom = -18.5397
+custom_fonts/font = SubResource( 5 )
+text = "Encriptar"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Volver" type="Button" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 541.993
+margin_top = 628.46
+margin_right = -430.007
+margin_bottom = -18.5397
+custom_fonts/font = SubResource( 5 )
+text = "Volver"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Volver" to="." method="_on_Volver_pressed"]

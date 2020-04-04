@@ -4,4 +4,6 @@ const DICCIONARIO = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","ñ
 
 func _ready():
 	pass
-
+# Funcion para volver a la escena de inicio
+func _on_Volver_pressed():
+	get_tree().change_scene("res://Inicio.tscn")
