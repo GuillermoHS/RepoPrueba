@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Maquina Enigma"
-run/main_scene="res://Encriptador.tscn"
+run/main_scene="res://inicio.tscn"
 config/icon="res://icon.png"
 
 [display]
