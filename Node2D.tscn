@@ -1,0 +1,15 @@
+[gd_scene format=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Label" type="Label" parent="Node"]
+margin_left = 102.0
+margin_top = 51.0
+margin_right = 405.0
+margin_bottom = 138.0
+text = "PRUEBA"
+__meta__ = {
+"_edit_use_anchors_": false
+}
