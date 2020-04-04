@@ -142,3 +142,13 @@ text = "Texto a desencriptar"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Label3" type="Label" parent="."]
+margin_left = 611.815
+margin_top = 228.551
+margin_right = 653.815
+margin_bottom = 242.551
+text = "POLLA"
+__meta__ = {
+"_edit_use_anchors_": false
+}
