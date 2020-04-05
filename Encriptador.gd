@@ -17,7 +17,8 @@ func _on_Boton_Encriptar_pressed():
 	if $textoaencriptar.text == "":
 		$AcceptDialog.dialog_text = "No se ha introducido texto para encriptar"
 		$AcceptDialog.show()
-	var clave = $TextEdit.text()
+		pass
+	var clave = $TextEdit.text
 	var claveArray = []
 	var clavePublica: int = 0
 	for c in clave:
