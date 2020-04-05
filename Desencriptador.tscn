@@ -185,5 +185,6 @@ text = "Reset"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+[connection signal="pressed" from="Boton Encriptar" to="." method="_on_Boton_Encriptar_pressed"]
 [connection signal="pressed" from="Volver" to="." method="_on_Volver_pressed"]
 [connection signal="pressed" from="ButtonDES" to="." method="_on_ButtonDES_pressed"]
