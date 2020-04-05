@@ -45,3 +45,9 @@ func _on_Boton_Encriptar_pressed():
 	for c in range(0,textoArray.size()):
 		textoEncriptado += textoArray[c]
 	$textoencriptado.text =  textoEncriptado
+
+
+func _on_ButtonEN_pressed():
+	$textoaencriptar.text = ""
+	$textoencriptado.text = ""
+	$TextEdit.text = ""
