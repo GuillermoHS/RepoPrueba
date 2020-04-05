@@ -18,7 +18,7 @@ func _on_Boton_Encriptar_pressed():
 	var clavePublica: int = 0
 	for c in clave:
 		claveArray.append(c)
-		for p in DICCIONARIO.size():
-			if claveArray[c] == DICCIONARIO[p]:
-				clavePublica = clavePublica + p
-	
+		for c1 in range(claveArray.size()):
+			for p in DICCIONARIO.size():
+				if claveArray[c1] == DICCIONARIO[p]:
+					clavePublica = clavePublica + p
