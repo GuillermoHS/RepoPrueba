@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Fuentes/static/RobotoSlab-Bold.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Encriptador.gd" type="Script" id=2]
+[ext_resource path="res://Button.gd" type="Script" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 size = 23
@@ -19,6 +20,10 @@ font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=5]
 size = 33
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 19
 font_data = ExtResource( 1 )
 
 [node name="CanvasLayer" type="CanvasLayer"]
@@ -99,10 +104,10 @@ __meta__ = {
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="ColorRect" type="ColorRect" parent="ParallaxBackground"]
-margin_left = -16.4417
-margin_top = -19.1088
-margin_right = 1305.56
-margin_bottom = 753.891
+margin_left = -8.68547
+margin_top = -12.4606
+margin_right = 1313.32
+margin_bottom = 760.539
 color = Color( 0.203922, 0.203922, 0.219608, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -136,10 +141,10 @@ __meta__ = {
 [node name="Volver" type="Button" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 543.18
-margin_top = 621.46
-margin_right = -428.82
-margin_bottom = -25.5397
+margin_left = 509.939
+margin_top = 620.352
+margin_right = -462.061
+margin_bottom = -26.6477
 custom_fonts/font = SubResource( 5 )
 text = "Volver"
 __meta__ = {
@@ -168,5 +173,18 @@ margin_top = -44.0
 margin_right = 147.5
 margin_bottom = 44.0
 window_title = "Error"
+
+[node name="ButtonEN" type="Button" parent="."]
+margin_left = 1067.25
+margin_top = 316.163
+margin_right = 1164.25
+margin_bottom = 348.163
+custom_fonts/font = SubResource( 6 )
+text = "Reset"
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="pressed" from="Boton Encriptar" to="." method="_on_Boton_Encriptar_pressed"]
 [connection signal="pressed" from="Volver" to="." method="_on_Volver_pressed"]
+[connection signal="pressed" from="ButtonEN" to="." method="_on_ButtonEN_pressed"]

@@ -7,3 +7,9 @@ func _ready():
 # Funcion para volver a la escena de inicio
 func _on_Volver_pressed():
 	get_tree().change_scene("res://Inicio.tscn")
+
+
+func _on_ButtonDES_pressed():
+	$TexoAdesencriptar.text = ""
+	$TextoDesencriptado.text = ""
+	$ClaveP.text = ""
