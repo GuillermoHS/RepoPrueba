@@ -78,8 +78,10 @@ margin_left = 65.4892
 margin_top = 353.227
 margin_right = -67.5109
 margin_bottom = -145.773
+focus_mode = 2
 custom_styles/normal = SubResource( 2 )
 scroll_following = true
+selection_enabled = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
