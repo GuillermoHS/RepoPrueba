@@ -11,14 +11,36 @@ func _on_Volver_pressed():
 
 func _on_Boton_Encriptar_pressed():
 	if $TextEdit.text == "":
+		$AcceptDialog.dialog_text = "No se ha introducido una clave"
 		$AcceptDialog.show()
 		pass
-	var clave = $TextEdit
+	if $textoaencriptar.text == "":
+		$AcceptDialog.dialog_text = "No se ha introducido texto para encriptar"
+		$AcceptDialog.show()
+	var clave = $TextEdit.text()
 	var claveArray = []
 	var clavePublica: int = 0
 	for c in clave:
 		claveArray.append(c)
-		for c1 in range(claveArray.size()):
-			for p in DICCIONARIO.size():
-				if claveArray[c1] == DICCIONARIO[p]:
-					clavePublica = clavePublica + p
+	for c1 in range(0,claveArray.size()):
+		for p in range(0,DICCIONARIO.size()):
+			if claveArray[c1] == DICCIONARIO[p]:
+				clavePublica = clavePublica + p
+	var  textoAEncriptar = $textoaencriptar.text
+	var  textoArray = []
+	for c in textoAEncriptar:
+		textoArray.append(c)
+	for  c in range(0,textoArray.size()):
+		for p in range(0,DICCIONARIO.size()):
+			var nuevaPosicion: int = 0
+			if textoArray[c] == DICCIONARIO[p]:
+				nuevaPosicion = p + clavePublica
+				if nuevaPosicion  > DICCIONARIO.size():
+					nuevaPosicion = nuevaPosicion - DICCIONARIO.size() - 1
+					textoArray[c] = DICCIONARIO[nuevaPosicion]
+				else:
+					textoArray[c] = DICCIONARIO[nuevaPosicion]
+	var textoEncriptado = ""
+	for c in range(0,textoArray.size()):
+		textoEncriptado += textoArray[c]
+	$textoencriptado.text =  textoEncriptado
